@@ -1,0 +1,12 @@
+<svg width="438px" height="138px" viewBox="0 0 438 138" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path d="M0,15 C0,15 12.4843658,16.0931224 220.875086,0 C265.189414,3.91990942 300.472939,6.85193265 328.563057,9.038758 C432.971555,17.1669954 438,15 438,15 L438,123 C438,123 428.435658,122.571573 220.875,138 C11.9431653,121.130212 0,123 0,123 L0,15 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="438" height="138" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <use id="logo-stroke" stroke="#000000" mask="url(#mask-2)" stroke-width="17" fill="none" xlink:href="#path-1"></use>
+    <text id="logo-text" stroke="none" fill="none" font-family="Bebas" font-size="60.375" font-weight="normal" letter-spacing="2.48089725">
+        <tspan x="33.5611198" y="95.75" fill="#212121">Smak Natury</tspan>
+    </text>
+</svg>

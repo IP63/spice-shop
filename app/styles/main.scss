@@ -1,0 +1,17 @@
+$icon-font-path: '../fonts/';
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/select2/src/scss/core.scss";
+// endbower
+
+@import "variables";
+@import "base";
+@import "top";
+@import "offer";
+@import "recipe";
+@import "products";
+@import "select2";
+@import "contact";
+@import "footer";
+@import "menu";

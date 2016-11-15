@@ -1,0 +1,21 @@
+.footer {
+  background-color: $dark-bg;
+  color: $dark-bg-txt;
+  font-size: 1.4rem;
+  padding: 4.3rem 0;
+  overflow: hidden;
+
+  &__logo {
+    height: 30px;
+    margin-bottom: 2.4rem;
+  }
+}
+
+
+@media (min-width: $screen-sm-min) {
+
+  .footer {
+    padding: 8.6rem 0;
+  }
+
+}

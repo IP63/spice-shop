@@ -1,0 +1,192 @@
+*:focus {
+    outline: none;
+}
+
+html, body {
+  height: 100%;
+  margin: 0; padding: 0; border: 0;
+}
+
+body {
+  font-family: $font-stack;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+
+// Vertical center
+
+.va-block {
+  text-align: center;
+  height: 100%;
+}
+
+.va-block:before {
+  content: '\200B';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.center {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+// wrapper
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+// Container
+
+@media (max-width: $screen-xs-max) {
+
+  .container {
+    padding: 0 25px;
+  }
+
+}
+
+@mixin filling-hover($color, $time) {
+  background-image: linear-gradient($color, $color);
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  background-size: 0% 100%;
+  transition: background-size $time, color 0.2s;
+  -webkit-backface-visibility:hidden;
+}
+
+
+// Animations
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+.animated {
+  animation-duration: .3s;
+}
+
+
+// buttons
+
+.btn {
+  font-size: 1.4rem;
+  border: 2px solid $primary-color;
+  border-radius: 0;
+  background: none;
+  color: $primary-color;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $light-bg;
+    background-color: $primary-color;
+  }
+
+  &:active {
+    box-shadow: none;
+    color: $primary-color;
+  }
+
+  &--default {
+    @include filling-hover($primary-color, 0.4s);
+    padding: 1rem 3.2rem;
+
+    &:hover {
+      background-color: transparent;
+      background-size: 100% 100%;
+    }
+  }
+
+  &--offer {
+    @include filling-hover($primary-color, 0.2s);
+    font-size: 1.2rem;
+    line-height: 1.4em;
+    letter-spacing: 0.2em;
+    padding: 1rem 3rem;
+    border-color: $light-border;
+    color: $light-bg-txt;
+
+
+    &:hover {
+      background-color: transparent;
+      background-size: 100% 100%;
+      border-color: $primary-color;
+    }
+
+  }
+
+  &--recipe {
+    background-color: $primary-color;
+    color: #ffffff;
+    display: block;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 20px 0;
+    border: 0;
+    transition: all 0.2s;
+
+    &:after {
+      content: "\e080";
+      font-family: 'Glyphicons Halflings';
+      font-size: 1.2rem;
+      padding-left: 16px;
+    }
+
+    &:hover {
+      padding-left: 10px;
+    }
+
+    &:active {
+      color: #fff;
+    }
+
+  }
+
+}
+
+@media (min-width: $screen-sm-min) {
+}

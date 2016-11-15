@@ -1,0 +1,75 @@
+.select2-container--default {
+
+  // select box
+  .select2-selection--single {
+    background: transparent;
+    border: 1px solid $light-border;
+    border-radius: 20px;
+    text-align: left;
+    height: 40px;
+
+    .select2-selection__rendered {
+      color: #000;
+      font-size: 1.6rem;
+      padding: 5px 39px 5px 15px;
+    }
+
+    .select2-selection__arrow {
+      width: 32px;
+      height: 100%;
+      top: 0;
+      right: 5px;
+
+      b {
+        border: none;
+        background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4=');
+        background-size: 100%;
+        width: 16px;
+        height: 16px;
+        margin-left: -8px;
+        margin-top: -8px;
+        transition: all 0.1s;
+      }
+
+    }
+
+  }
+
+  // dropdown
+
+  @at-root {
+
+    .select2-dropdown {
+      border-color: $light-border;
+      border-radius: 20px;
+      background-color: #ffffff;
+      color: $light-bg-txt;
+      font-size: 1.6rem;
+      line-height: 2.8rem;
+      overflow: hidden;
+    }
+
+    .select2-container--open .select2-selection__arrow b {
+      transform: rotate(180deg);
+    }
+
+  }
+
+  .select2-results__option {
+    padding: 5px 15px;
+    color: $light-bg-txt;
+
+    &[aria-selected=true] {
+      background-color: #ffffff;
+      color: $light-bg-txt;
+    }
+
+    &--highlighted[aria-selected] {
+      background-color: #f2f2f2;
+      color: #000;
+      font-weight: normal;
+    }
+
+  }
+
+}

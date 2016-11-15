@@ -1,0 +1,94 @@
+.contact {
+
+  background-color: #282828;
+  padding: 6.2rem 0;
+
+  &__title, &__desc {
+    font-family: $serif-stack;
+  }
+
+  &__title {
+    color: $primary-color;
+    font-size: 2.2rem;
+    position: relative;
+    margin: 0;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 13rem;
+      height: 2px;
+      position: absolute;
+      bottom: -1rem;
+      left: 0;
+      background: $primary-color;
+    }
+
+  }
+
+  &__desc {
+    color: #ffffff;
+    font-size: 4rem;
+    line-height: 1.2em;
+    margin: 4.6rem 0 6rem 0;
+  }
+
+  &-form {
+    border: 2px solid #ffffff;
+    // height: 300px;
+    padding: 4rem;
+
+    &__input, &__textarea, &__submit {
+      border: none;
+      width: 100%;
+      background: transparent;
+      border-bottom: 2px solid $dark-bg-txt;
+      color: #ffffff;
+      margin-bottom: 2rem;
+      padding: 0.8rem 0;
+      transition: all 0.4s;
+
+      &:focus {
+        border-color: $primary-color;
+        color: $primary-color;
+      }
+
+      &::placeholder {
+        color: $dark-bg-txt;
+        opacity: 1;
+      }
+
+    }
+
+    &__input {}
+
+    &__textarea {
+      resize: none;
+      overflow-y: scroll;
+      height: 93px;
+    }
+
+    &__submit {
+      border: none;
+      background-color: $primary-color;
+      color: #fff;
+      padding: 1rem 0;
+      margin: 0;
+
+      &:hover {
+        background-color: #fff;
+        color: $primary-color;
+      }
+
+    }
+
+  }
+
+}
+
+
+@media (min-width: $screen-sm-min) {
+
+  .contact {}
+
+}
